@@ -79,7 +79,7 @@ public class foodorder extends Frame
 				} 
 				catch (SQLException en) 
 				{ 
-				  displaySQLErrors(en);a=true;
+				  displaySQLErrors(en);a=false;
 				}
 			}
 		});
@@ -121,7 +121,7 @@ public class foodorder extends Frame
 		add(second);
 		add(third);
 	    
-		setTitle("Give organization Details");
+		setTitle("Give menu Details");
 		setSize(500, 600);
 		setVisible(true);
 		return a;
