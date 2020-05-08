@@ -33,7 +33,7 @@ public class foodorder extends Frame
     {
 		try 
 		{
-		  connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL","srav","vasavi");
+		  connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","sravya","vasavi");
 		  statement = connection.createStatement();
 
 		} 
@@ -64,7 +64,7 @@ public class foodorder extends Frame
 				catch (SQLException insertException) 
 				{
 				  displaySQLErrors(insertException);
-				  a=false;
+				  a=true;
 				}
 				
 				// DISPLAYING THE NAMES OF ORG.
