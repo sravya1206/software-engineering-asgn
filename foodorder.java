@@ -33,7 +33,7 @@ public class foodorder extends Frame
     {
 		try 
 		{
-		  connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","sravya","vasavi");
+		  connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","srav","vasavi");
 		  statement = connection.createStatement();
 
 		} 
@@ -79,7 +79,7 @@ public class foodorder extends Frame
 				} 
 				catch (SQLException en) 
 				{ 
-				  displaySQLErrors(en);a=false;
+				  displaySQLErrors(en);a=true;
 				}
 			}
 		});
