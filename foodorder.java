@@ -33,7 +33,7 @@ public class foodorder extends Frame
     {
 		try 
 		{
-		  connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","srav","vasavi");
+		  connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL","srav","vasavi");
 		  statement = connection.createStatement();
 
 		} 
