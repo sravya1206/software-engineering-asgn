@@ -64,7 +64,7 @@ public class foodorder extends Frame
 				catch (SQLException insertException) 
 				{
 				  displaySQLErrors(insertException);
-				  a=true;
+				  a=false;
 				}
 				
 				// DISPLAYING THE NAMES OF ORG.
